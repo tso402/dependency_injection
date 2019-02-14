@@ -45,3 +45,13 @@ class NoteFormatter
     "Title: #{note.title}\n#{note.body}"
   end
 end
+
+## Exercise 2 - Make isolatable and then write tests
+
+class Greeter
+  def greet
+    puts "What is your name?"
+    name = Kernel.gets.chomp
+    puts "Hello, #{name}"
+  end
+end
