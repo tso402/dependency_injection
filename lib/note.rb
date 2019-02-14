@@ -1,9 +1,9 @@
 require_relative 'noteformatter.rb'
 class Note
-  def initialize(title, body)
+  def initialize(title, body, formatter = NoteFormatter.new)
     @title = title
     @body = body
-    @formatter = NoteFormatter.new
+    @formatter = formatter
   end
 
   def display
